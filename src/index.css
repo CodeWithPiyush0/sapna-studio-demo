@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define Colors */
+  --color-gold: #D4AF37;
+  --color-dark: #0a0a0a;
+
+  /* Define Fonts */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+    background-color: var(--color-dark); /* Use the variable we just made */
+}
