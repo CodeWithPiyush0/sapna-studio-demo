@@ -63,6 +63,7 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.3 }}
+              style={{ backgroundColor: "#0a0a0a" }}
               className="fixed inset-0 bg-black flex flex-col items-center justify-center gap-8 md:hidden z-40"
             >
               {navLinks.map((link) => (
@@ -70,15 +71,15 @@ const Navbar = () => {
                   key={link.name}
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-2xl text-white font-serif hover:text-gold transition"
+                  className="text-3xl text-white font-serif hover:text-gold transition tracking-widest"
                 >
                   {link.name}
                 </a>
               ))}
 
               <div className="flex gap-6 mt-4">
-                <a href="https://www.instagram.com/sapna_studioo" className="text-white text-3xl"><FaInstagram /></a>
-                <a href="https://wa.me/" className="text-white text-3xl"><FaWhatsapp /></a>
+                <a href="https://www.instagram.com/sapna_studioo" className="text-white text-4xl hover:text-gold transition"><FaInstagram /></a>
+                <a href="https://wa.me/" className="text-white text-4xl hover:text-green-400 transition"><FaWhatsapp /></a>
               </div>
             </motion.div>
           )}
